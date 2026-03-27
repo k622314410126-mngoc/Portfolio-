@@ -22,16 +22,17 @@ color:#C38D9E;
 }
 
 /* NAVBAR */
+
 nav{
 display:flex;
-justify-content:space-between;
+justify-content:center;
 padding:20px 10%;
 background:#C38D9E;
 }
 
 nav ul{
 display:flex;
-gap:20px;
+gap:25px;
 list-style:none;
 }
 
@@ -39,9 +40,11 @@ nav a{
 color:white;
 text-decoration:none;
 font-weight:bold;
+font-size:16px;
 }
 
 /* HERO */
+
 .hero{
 text-align:center;
 padding:100px 20px;
@@ -63,12 +66,14 @@ to{box-shadow:0 0 25px #C38D9E;}
 }
 
 /* SECTION */
+
 section{
 padding:60px 15%;
 animation:fadeIn 1s ease;
 }
 
 /* CARD GRID */
+
 .card-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -76,6 +81,7 @@ gap:20px;
 }
 
 /* CARD */
+
 .card{
 background:white;
 color:#2E2E2E;
@@ -95,24 +101,26 @@ box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
 /* CARD IMAGE */
+
 .card img{
 width:100%;
 border-radius:10px;
 margin-bottom:10px;
 }
 
-/* SKILLS SECTION */
+/* SKILLS */
 
 .skills-wrapper{
 display:flex;
-justify-content:center;
-gap:80px;
+justify-content:space-between;
+gap:60px;
 flex-wrap:wrap;
-margin-top:30px;
+margin-top:10px;
 }
 
 .skills-column{
-max-width:400px;
+flex:1;
+min-width:250px;
 }
 
 .skills-column h3{
@@ -126,10 +134,10 @@ gap:10px;
 }
 
 .skills-tags span{
-background:#F1F1F1;
-padding:8px 14px;
-border-radius:8px;
-font-size:14px;
+background:#F3F3F3;
+padding:6px 12px;
+border-radius:6px;
+font-size:13px;
 transition:0.2s;
 }
 
@@ -138,15 +146,31 @@ background:#C38D9E;
 color:white;
 }
 
-/* IMAGE */
-.exp-img{
-width:100%;
-border-radius:10px;
+/* ACTIVITIES */
+
+.activities-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 margin-top:20px;
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.activities-container img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.activities-container img:hover{
+transform:scale(1.05);
 }
 
 /* FOOTER */
+
 footer{
 text-align:center;
 padding:30px;
@@ -156,6 +180,7 @@ margin-top:40px;
 }
 
 /* ANIMATION */
+
 @keyframes sparkle{
 0%{opacity:1;}
 100%{opacity:0.85;}
